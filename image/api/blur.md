@@ -1,37 +1,37 @@
-# blur — Blurs an image
+# 模糊 — 对图片进行模糊操作
 
-## Description
+## 描述
 
 > public Intervention\Image\Image blur( [integer $amount] )
 
-Apply a gaussian blur filter with a optional **amount** on the current image. Use values between ```0``` and ```100```.
+应用高斯模糊滤镜到当前图片. 参数取值范围 ```0``` 到 ```100```.
 
-**Note: Performance intensive on larger amounts of blur with GD driver. Use with care.**
+**提示: 性能模糊性的应用请慎重使用 GD 库.**
 
-## Parameters
+## 参数
 
-### amount (optional)
-The amount of the blur strength. Use values between 0 and 100. Default: 1
+### amount (可选)
+模糊的强度, 取值范围 0 到 100. 默认 1
 
-## Return Values
-Instance of Intervention\Image\Image
+## 返回值
+Intervention\Image\Image 的实例对象
 
-## Examples
+## 示例
 
 ```php
-// create new Intervention Image
+// 初始化 Intervention Image
 $img = Image::make('public/foo.jpg');
 
-// apply slight blur filter
+// 应用轻度滤镜
 $img->blur();
 
-// apply stronger blur
+// 应用强度滤镜
 $img->blur(15);
 ```
 
-## See also
+## 参考链接
 
-- [sharpen](/api/sharpen)
-- [pixelate](/api/pixelate)
-- [brightness](/api/brightness)
-- [contrast](/api/contrast)
+- [锐化](/api/sharpen)
+- [滤镜](/api/pixelate)
+- [亮度](/api/brightness)
+- [对比度](/api/contrast)
