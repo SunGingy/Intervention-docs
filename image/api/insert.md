@@ -63,7 +63,7 @@ $img->insert($watermark, 'center');
 $img->insert('public/watermark.png', 'bottom-right', 10, 10);
 ```
 
-See also
+## 参考
 
 - [mask](/api/mask)
 

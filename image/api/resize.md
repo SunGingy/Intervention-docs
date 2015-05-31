@@ -1,21 +1,20 @@
-# resize — Resize current image
+# 调整大小 — 调整当前图片大小
 
 ## 描述
     
 > public Intervention\Image\Image resize (integer $width, integer $height, [Closure $callback])
 
-Resizes current image based on given **width** and/or **height**. To contraint the resize command, pass an optional Closure **callback** as third parameter.
-    
+根据传入的 **宽** 和 **高** 调整当前图片的大小. 可以在第三个可选参数传入一个闭包, 来限制 `resize` 命令.
+
 ## 参数
 
-### width
-The new width of the image
+### width 宽度
+新图片的宽度
 
-### height
-The new height of the image
+### height 高度
+新图片的的高度
 
-### callback (optional)
-
+### callback 回调 (可选)
 Closure callback defining constraints on the resize. It's possible to contraint the **aspect-ratio** and/or a unwanted **upsizing** of the image. See examples below.
 
 #### aspectRatio
@@ -32,7 +31,7 @@ Keep image from being upsized.
 
     
 ## 返回值
-Instance of Intervention\Image\Image
+Intervention\Image\Image 的实例对象
 
 ## 示例
 
