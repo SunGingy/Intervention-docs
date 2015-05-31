@@ -1,12 +1,12 @@
 # widen — Resize image proportionally to given width
 
-## Description
+## 描述
 
 > public Intervention\Image\Image widen(integer $width, [Closure $callback])
 
 Resizes the current image to new **width**, constraining aspect ratio. Pass an optional Closure **callback** as third parameter, to apply additional constraints like preventing possible upsizing.
 
-## Parameters
+## 参数
 
 ### width
 The new width of the image
@@ -22,10 +22,10 @@ Keep image from being upsized.
 
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // resize image to new width
@@ -38,7 +38,7 @@ $img = Image::make('public/foo.jpg')->widen(300, function ($constraint) {
 ```
 
 
-## See also
+## 参考
 
 - [heighten](/api/heighten)
 - [resize](/api/resize)

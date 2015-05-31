@@ -1,13 +1,13 @@
 # pixel — Draw a single pixel
 
-## Description
+## 描述
 
 > public Intervention\Image\Image pixel(mixed $color, integer $x, integer $y)
 
 Draw a single pixel in given **color** on **x, y position**.
 
 
-## Parameters
+## 参数
 
 ### color
 The color of the pixel. Pass a color in one of the different [color formats](/getting_started/formats).
@@ -18,10 +18,10 @@ x-coordinate of the pixel.
 ### y
 y-coordinate of the pixel.
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create empty canvas with background color
@@ -35,7 +35,7 @@ $img->pixel('#ff0000', 64, 64);
 ```
 
 
-## See also
+## 参考
 
 - [line](/api/line)
 - [rectangle](/api/rectangle)

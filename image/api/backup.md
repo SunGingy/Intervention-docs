@@ -1,21 +1,21 @@
 # backup — backups current image state
 
-## Description
+## 描述
 
 > public Intervention\Image\Image backup( [string $name] )
 
 Backups current image state as fallback for [reset method](/api/reset) under an optional **name**. Overwrites older state on every call, unless a different name is passed.
 
 
-## Parameters
+## 参数
 
 ### name (optional)
 The name of the backup in memory. Default: *default*
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create empty canvas with black background
@@ -34,6 +34,6 @@ $img->fill('tile.png');
 $img->reset();
 ```
 
-## See also
+## 参考
 
 - [reset](/api/reset)

@@ -1,22 +1,22 @@
 # interlace — Toggle interlaced mode
 
-## Description
+## 描述
 
 > public Intervention\Image\Image interlace([boolean $interlace])
 
 Determine whether an image should be encoded in interlaced or standard mode by toggling **interlace** mode with a boolean parameter. If an JPEG image is set interlaced the image will be processed as a progressive JPEG.
 
 
-## Parameters
+## 参数
 
 ### interlace (optional)
 If interlace is set to boolean ```true``` the image will be encoded interlaced. If the parameter is set to ```false``` interlaced mode is turned off. Default: true
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // open image
@@ -38,7 +38,7 @@ $img->interlace(false);
 $img->save();
 ```
 
-## See also
+## 参考
 
 - [limitColors](/api/limitColors)
 - [save](/api/save)

@@ -1,21 +1,21 @@
 # filter — apply filter on image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image filter( Intervention\Image\Filters\FilterInterface $filter )
 
 The method applies custom filter on current image. Filters are bundles of commands which apply combined operations and effects on an image. Any filters must implement the ```Intervention\Image\Filters\FilterInterface```  and call any method that can be applied to an Intervention Image instance.
 
-## Parameters
+## 参数
 
 ### filter
 
 Instance of your custom filter. See example of DemoFilter below which combines a greyscale/pixelate effect.
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // init new image instance

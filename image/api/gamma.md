@@ -1,22 +1,22 @@
 # gamma — Apply gamma correction
 
-## Description
+## 描述
 
 > public Intervention\Image\Image gamma( float $correction )
 
 Performs a gamma correction operation on the current image.
 
 
-## Parameters
+## 参数
 
 ### correction
 Gamma compensation value.
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create new Intervention Image
@@ -26,7 +26,7 @@ $img = Image::make('public/foo.jpg');
 $img->gamma(1.6);
 ```
 
-## See also
+## 参考
 
 - [brightness](/api/brightness)
 - [contrast](/api/contrast)

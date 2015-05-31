@@ -1,21 +1,21 @@
 # contrast — Change the contrast of an image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image contrast(integer $level)
 
 Changes the contrast of the current image by the given **level**. Use values between ```-100``` for min. contrast ```0``` for no change and ```+100``` for max. contrast.
 
 
-## Parameters
+## 参数
 
 ### level
 Level of contrast change applied to the current image. Use values between -100 and +100.
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create new Intervention Image
@@ -25,7 +25,7 @@ $img = Image::make('public/foo.jpg');
 $img->contrast(65);
 ```
 
-## See also
+## 参考
 
 - [brightness](/api/brightness)
 - [gamma](/api/gamma)

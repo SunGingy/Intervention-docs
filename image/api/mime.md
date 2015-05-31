@@ -1,16 +1,16 @@
 # mime — Get MIME Type
 
-## Description
+## 描述
 
 > public Intervention\Image\Image mime()
 
 Read MIME Type of current image instance, if it's already defined.
 
-## Parameters
+## 参数
 
 none
 
-## Return Values
+## 返回值
 MIME Type of current image.
 
 Examples
@@ -20,7 +20,7 @@ Examples
 $mime = Image::make('public/foo.jpg')->mime();
 ```
 
-## See also
+## 参考
 
 - [width](/api/width)
 - [height](/api/height)

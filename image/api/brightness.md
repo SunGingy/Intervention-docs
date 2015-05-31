@@ -1,21 +1,21 @@
-# brightness — Change the brightness of an image
+# 两顿 — 调整图片的亮度
 
-## Description
+## 描述
 
 > public Intervention\Image\Image brightness( integer $level )
 
 Changes the brightness of the current image by the given **level**. Use values between ```-100``` for min. brightness ```0``` for no change and ```+100``` for max. brightness.
 
 
-## Parameters
+## 参数
 
 ### level
 Level of brightness change applied to the current image. Use values between -100 and +100.
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create new Intervention Image
@@ -25,7 +25,7 @@ $img = Image::make('public/foo.jpg');
 $img->brightness(35);
 ```
 
-## See also
+## 参考
 
 - [contrast](/api/contrast)
 - [gamma](/api/gamma)

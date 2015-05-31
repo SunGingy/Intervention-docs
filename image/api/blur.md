@@ -29,7 +29,7 @@ $img->blur();
 $img->blur(15);
 ```
 
-## 参考链接
+## 参考
 
 - [锐化](/api/sharpen)
 - [滤镜](/api/pixelate)

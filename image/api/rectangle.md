@@ -1,13 +1,13 @@
 # rectangle — draw a rectangle
 
-## Description
+## 描述
 
 > public Intervention\Image\Image rectangle(int $x1, int $y1, int $x2, int $y2, [Closure $callback])
 
 Draw a colored rectangle on current image with top-left corner on **x,y point 1** and bottom-right corner at **x,y point 2**. Define the overall appearance of the shape by passing a Closure **callback** as an optional parameter.
 
 
-## Parameters
+## 参数
 
 ### x1
 x-coordinate of the top-left point of the rectangle.
@@ -37,10 +37,10 @@ Define the background-color of the rectangle in one of the available [color form
 Define the border of the rectangle. Set width as pixels in the first and the border-color in one of the available [color formats](/getting_started/formats) as second parameter.
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create empty canvas with background color
@@ -61,7 +61,7 @@ $img->rectangle(5, 5, 195, 195, function ($draw) {
 });
 ```
 
-## See also
+## 参考
 
 - [pixel](/api/pixel)
 - [line](/api/line)

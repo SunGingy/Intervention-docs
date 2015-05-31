@@ -1,13 +1,13 @@
 # colorize — Change color balance of an image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image colorize(integer $red, integer $green, integer $blue)
 
 Change the RGB color values of the current image on the given channels **red**, **green** and **blue**. The input values are normalized so you have to include parameters from ```100``` for maximum color value ```0``` for no change and ```-100``` to take out all the certain color on the image.
 
 
-## Parameters
+## 参数
 
 ### red
 Add or take out a amount of red color on the image. Use values between -100 and +100.
@@ -19,10 +19,10 @@ Add or take out a amount of green color on the image. Use values between -100 an
 Add or take out a amount of blue color on the image. Use values between -100 and +100.
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create new Intervention Image
@@ -35,7 +35,7 @@ $img->colorize(-100, 0, 100);
 $img->colorize(0, 30, 0);
 ```
 
-## See also
+## 参考
 
 - [brightness](/api/brightness)
 - [contrast](/api/contrast)

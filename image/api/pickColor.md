@@ -1,12 +1,12 @@
 # pickColor — Pick a color out of an image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image pickColor(int $x, int $y, [string $format])
 
 Pick a color at **point x, y** out of current image and return in optional given **format**.
 
-## Parameters
+## 参数
 
 ### x
 x-coordinate of the pixel the color is picked from.
@@ -25,10 +25,10 @@ Select the color to be formated in one of the different types:
 
 By default the method returns the RGB value of that pixel as an array. Use the integer format to pass colors directly into any GD Library functions.
 
-## Return Values
+## 返回值
 mixed - Depends on format parameter. By default an array of the RGB and alpha values.
 
-## Examples
+## 示例
 
 ```php
 // create an image

@@ -1,12 +1,12 @@
 # response — Attach image to new HTTP response
 
-## Description
+## 描述
 
 > public Intervention\Image\Image response([string $format, [integer $quality]])
 
 Sends HTTP response with current image in given **format** and **quality**.
 
-## Parameters
+## 参数
 
 ### format (optional)
 Define the encoding format from one of the following formats:
@@ -23,10 +23,10 @@ By default the response data will be encoded in the type of the current image. I
 Define optionally the quality encoded image data ranging from 0 (poor quality, small file) to 100 (best quality, big file). Default: ```90```.
 
 
-## Return Values
+## 返回值
 Encoded image data after raw HTTP header is sent. If you are in a **Laravel framework** environment the method will return a **Illuminate\Http\Response** with the corresponding header fields already set.
 
-## Examples
+## 示例
 
 #### Basic Example
 
@@ -47,7 +47,7 @@ Route::get('/', function()
 });
 ```
 
-## See also
+## 参考
 
 - [encode](/api/encode)
 - [save](/api/save)

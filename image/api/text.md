@@ -1,13 +1,13 @@
 # text — Write text to an image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image text(string $text, [integer $x, [integer $y, [Closure $callback]]])
 
 Write a **text** string to the current image at an optional **x,y basepoint position**. You can define more details like font-size, font-file and alignment via a **callback** as the fourth parameter.
 
 
-## Parameters
+## 参数
 
 ### text
 The text string that will be written to the image.
@@ -59,12 +59,12 @@ Set rotation angle of text in degrees. Text will be rotated counter-clockwise ar
 
 ---
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
 <a name="examples"></a>
 
-## Examples
+## 示例
 
 ```php
 // create Image from file

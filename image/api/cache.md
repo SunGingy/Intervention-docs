@@ -1,6 +1,6 @@
 # cache — Create cached images
 
-## Description
+## 描述
 
 > public Intervention\Image\ImageManager cache( Closure $callback, [int $lifetime, [bool $returnObj]] )
 
@@ -8,7 +8,7 @@ Method to create a new cached image instance from a **Closure callback**. Pass a
 
 **Note: This method requires the additional package intervention/imagecache.**
 
-## Parameters
+## 参数
 
 ### callback
 A closure containing the operations on an image, defining the cached image.
@@ -19,10 +19,10 @@ The lifetime in minutes of the image callback in the cache. (Default: 5)
 ### returnObj (optional)
 Decide if you want the method to return an Intervention Image instance or (by default) the image stream.
 
-## Return Values
+## 返回值
 Mixed - based on ```returnObj``` parameter.
 
-## Examples
+## 示例
 
 ```php
 // create a cached image and set a lifetime and return as object instead of string
@@ -32,5 +32,5 @@ $img = Image::cache(function($image) {
 ```
 
 
-## See also
+## 参考
 - [Further Information about Image Caching](/use/cache)

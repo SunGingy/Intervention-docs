@@ -1,28 +1,28 @@
 # invert — Invert colors of an image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image invert()
 
 Reverses all colors of the current image.
 
 
-## Parameters
+## 参数
 
 none
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create Image from file and reverse colors
 $img = Image::make('public/foo.jpg')->invert();
 ```
 
-## See also
+## 参考
 
 - [brightness](/api/brightness)
 - [contrast](/api/contrast)

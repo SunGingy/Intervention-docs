@@ -1,12 +1,12 @@
 # resize — Resize current image
 
-## Description
+## 描述
     
 > public Intervention\Image\Image resize (integer $width, integer $height, [Closure $callback])
 
 Resizes current image based on given **width** and/or **height**. To contraint the resize command, pass an optional Closure **callback** as third parameter.
     
-## Parameters
+## 参数
 
 ### width
 The new width of the image
@@ -31,10 +31,10 @@ Constraint the current aspect-ratio if the image. As a shortcut to proportional 
 Keep image from being upsized.
 
     
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create instance
@@ -66,7 +66,7 @@ $img->resize(null, 400, function ($constraint) {
 });
 ```
 
-## See also
+## 参考
 
 - [widen](/api/widen)
 - [heighten](/api/heighten)

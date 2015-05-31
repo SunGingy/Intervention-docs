@@ -1,27 +1,27 @@
 # greyscale — Turn an image into a greyscale version
 
-## Description
+## 描述
 
 > public Intervention\Image\Image greyscale()
 
 Turns image into a greyscale version.
 
 
-## Parameters
+## 参数
 
 none
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create new Intervention Image and turn it into greyscale version
 $img = Image::make('public/foo.jpg')->greyscale();
 ```
 
-## See also
+## 参考
 
 - [brightness](/api/brightness)
 - [contrast](/api/contrast)

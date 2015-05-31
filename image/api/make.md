@@ -1,12 +1,12 @@
 # make — Create a new image resource
 
-## Description
+## 描述
 
 > public static Intervention\Image\ImageManager make(mixed $source)
 
 Universal factory method to create a new image instance from **source**. The method is highly variable to read all the input types listed below.
 
-## Parameters
+## 参数
 
 ### source
 
@@ -22,10 +22,10 @@ Source to create an image from. The method responds to the following input types
 - **object** - Intervention\Image\Image instance
 - **object** - SplFileInfo instance (To handle Laravel file uploads via Symfony\Component\HttpFoundation\File\UploadedFile)
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create a new image resource from file
@@ -44,7 +44,7 @@ $img = Image::make('http://example.com/example.jpg');
 $img = Image::make(Input::file('photo'));
 ```
 
-## See also
+## 参考
 
 - [canvas](/api/canvas)
 - [cache](/api/cache)

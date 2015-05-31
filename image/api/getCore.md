@@ -1,19 +1,19 @@
 # getCore — Read core instance of image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image getCore()
 
 Returns the current image in core format of the particular driver. If you're using GD, you will get the the current **GD resource** as return value. If you have setup the Imagick driver, the method will return the current image information as an **Imagick object**.
 
-## Parameters
+## 参数
 
 none
 
-## Return Values
+## 返回值
 mixed - depends on configured driver
 
-## Examples
+## 示例
 
 ```php
 // create Intervention Image

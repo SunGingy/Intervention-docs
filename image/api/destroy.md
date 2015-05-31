@@ -1,6 +1,6 @@
 # destroy — Free up memory
 
-## Description
+## 描述
 
 > public Intervention\Image\Image destroy()
 
@@ -9,12 +9,12 @@ Frees memory associated with the current image instance **before** the PHP scrip
 Of course, the image instance is no longer usable after the method has been called.
 
 
-## Parameters
+## 参数
 
 none
 
 
-## Return Values
+## 返回值
 none
 
 Examples

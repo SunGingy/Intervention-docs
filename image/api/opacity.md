@@ -1,6 +1,6 @@
 # opacity — Set opacity of an image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image opacity( integer $transparency )
 
@@ -8,16 +8,16 @@ Set the **opacity** in percent of the current image ranging from 100% for opaque
 
 **Note: Performance intensive on larger images. Use with care.**
 
-## Parameters
+## 参数
 
 ### transparency
 The new percent of transparency for the current image.
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create Image from file and set transparency to 50%
@@ -28,7 +28,7 @@ $img = Image::make('public/foo.jpg');
 $img->opacity(0);
 ```
 
-## See also
+## 参考
 
 - [fill](/api/fill)
 - [mask](/api/mask)

@@ -1,12 +1,12 @@
 # canvas — Create a new empty image resource
 
-## Description
+## 描述
 
 > public Intervention\Image\ImageManager canvas(integer $width, integer $height, [mixed $bgcolor])
 
 Factory method to create a new empty image instance with given **width and height**. You can define a **background-color** optionally. By default the canvas background is transparent.
 
-## Parameters
+## 参数
 
 ### width
 Width of the new image resource.
@@ -18,10 +18,10 @@ Height of the new image resource.
 Optional Background-color of the image resource. Pass a color in one of the supported [color formats](/getting_started/formats) or just leave it blank to get a transparent background.
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create a new empty image resource with transparent background
@@ -32,7 +32,7 @@ $img = Image::canvas(32, 32, '#ff0000');
 ```
 
 
-## See also
+## 参考
 
 - [make](/api/make)
 - [cache](/api/cache)

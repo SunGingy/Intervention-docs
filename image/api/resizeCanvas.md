@@ -1,13 +1,13 @@
 # resizeCanvas — Resize image boundaries
 
-## Description
+## 描述
 
 > public Intervention\Image\Image resizeCanvas (int $width, int $height, [string $anchor, [boolean $relative, [mixed $bgcolor]]])
 
 Resize the boundaries of the current image to given **width and height**. An **anchor** can be defined to determine from what point of the image the resizing is going to happen. Set the mode to **relative** to add or subtract the given width or height to the actual image dimensions. You can also pass a **background color** for the emerging area of the image.
 
 
-## Parameters
+## 参数
 
 ### width
 The new width in pixels of the image in absolute mode or the amount of pixels to add or subtract from height in relative mode.
@@ -39,10 +39,10 @@ Determine that the resizing is going to happen in relative mode. Meaning that th
 A background color for the new areas of the image. The background color can be passed in in different [color formats](/getting_started/formats). Default: ```#000000```
 
 
-## Return Values
+## 返回值
 Resized instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create Image from file
@@ -68,7 +68,7 @@ $img->resizeCanvas(1280, 720, 'center', false, 'ff00ff');
 ```
 
 
-## See also
+## 参考
 
 - [resize](/api/resize)
 - [fit](/api/fit)

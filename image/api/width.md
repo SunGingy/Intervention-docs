@@ -1,19 +1,19 @@
 # width — Get width of image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image width()
 
 Returns the width in pixels of the current image.
 
-## Parameters
+## 参数
 
 none
 
-## Return Values
+## 返回值
 Width of current image as integer
 
-## Examples
+## 示例
 
 ```php
 // read width of image
@@ -21,6 +21,6 @@ $width = Image::make('public/foo.jpg')->width();
 ```
 
 
-## See also
+## 参考
 
 - [height](/api/height)

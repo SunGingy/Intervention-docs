@@ -1,17 +1,17 @@
 # filesize — Gets file size
 
-## Description
+## 描述
 
 > public Intervention\Image\Image filesize()
 
 Gets the file size for the current image, if instance is initiated from an actual file.
 
-## Parameters
+## 参数
 
 none
 
 
-## Return Values
+## 返回值
 
 Returns the size of the image file in bytes or `false` if image instance is not created from a file.
 

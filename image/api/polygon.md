@@ -1,12 +1,12 @@
 # polygon — Draw a polygon
 
-## Description
+## 描述
 
 > public Intervention\Image\Image polygon(array $points, [Closure $callback])
 
 Draw a **colored** polygon with given **points**. You can define the **appearance** of the polygon by an optional closure callback.
 
-## Parameters
+## 参数
 
 ### points
 Points of the polygon defined by a single-dimensional array alternating x, y points. **See examples below.**
@@ -26,10 +26,10 @@ Define the background-color of the polygon in one of the available [color format
 
 Define the border of the polygon. Set width as pixels in the first and the border-color in one of the available [color formats](/getting_started/formats) as second parameter.
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create empty canvas with background color
@@ -53,7 +53,7 @@ $img->polygon($points, function ($draw) {
 ```
 
 
-## See also
+## 参考
 
 - [pixel](/api/pixel)
 - [line](/api/line)

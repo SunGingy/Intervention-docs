@@ -1,12 +1,12 @@
 # heighten — Resize image proportionally to given height
 
-## Description
+## 描述
 
 > public Intervention\Image\Image heighten(integer $height, [Closure $callback])
 
 Resizes the current image to new **height**, constraining aspect ratio. Pass an optional Closure **callback** as third parameter, to apply additional constraints like preventing possible upsizing.
 
-## Parameters
+## 参数
 
 ### height
 The new height of the image
@@ -22,10 +22,10 @@ Keep image from being upsized.
 
 
 
-## Return Values
+## 返回值
 Resized instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // resize image to new height
@@ -37,7 +37,7 @@ $img = Image::make('public/foo.jpg')->heighten(100, function ($constraint) {
 });
 ```
 
-## See also
+## 参考
 
 - [widen](/api/widen)
 - [resize](/api/resize)

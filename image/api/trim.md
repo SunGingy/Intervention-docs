@@ -1,6 +1,6 @@
 # trim — Trim away parts of an image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image trim( [string $base, [array $away, [int $tolerance, [int $feather]]]] )
 
@@ -8,7 +8,7 @@ Trim away image space in given color. Define an optional **base** to pick a colo
 
 <div class="note">Note: Resource intensive with GD driver. Use with care.</div>
 
-## Parameters
+## 参数
 
 ### base
 Define the the point from where the trimming color is picked. For example if you set this parameter to ```bottom-right```, all color will be trimmed away that is equal to the color in the bottom-left corner of the image.
@@ -36,10 +36,10 @@ Define a percentaged tolerance level between 0 and 100 to trim away similar colo
 Sometimes it may be useful to leave a untouched "border" around an object while trimming. Especially when trimming non-solid backgrounds you can expand (positive value) or contract (negative value) the space around the trimed object by a certain amount of pixels. Default: 0
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // trim image (by default on all borders with top-left color)
@@ -61,7 +61,7 @@ Image::make('public/foo.jpg')->trim('top-left', null, 40);
 Image::make('public/foo.jpg')->trim('top-left', null, 25, 50);
 ```
 
-## See also
+## 参考
 
 - [resize](/api/resize)
 - [resizeCanvas](/api/resizeCanvas)

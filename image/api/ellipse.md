@@ -1,12 +1,12 @@
 # ellipse — Draw an ellipse
 
-## Description
+## 描述
 
 > public Intervention\Image\Image ellipse(int $width, int $height, int $x, int $y, [Closure $callback])
 
 Draw a **colored** ellipse at given **x, y, coordinates**. You can define **width** and **height** and set the **appearance** of the circle by an optional closure callback.
 
-## Parameters
+## 参数
 
 ### width
 width of the ellipse. Default: 10
@@ -35,10 +35,10 @@ Define the background-color of the ellipse in one of the available [color format
 
 Define the border of the ellipse. Set width as pixels in the first and the border-color in one of the available [color formats](/getting_started/formats) as second parameter.
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create empty canvas with background color
@@ -62,7 +62,7 @@ $img->ellipse(150, 200, 300, 200, function ($draw) {
 ```
 
 
-## See also
+## 参考
 
 - [pixel](/api/pixel)
 - [line](/api/line)

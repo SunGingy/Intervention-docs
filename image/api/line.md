@@ -1,12 +1,12 @@
 # line — Draw a line
 
-## Description
+## 描述
 
 > public Intervention\Image\Image line(int $x1, int $y1, int $x2, int $y2, [Closure $callback])
 
 Draw a line from **x,y point 1** to **x,y point 2** on current image. Define **color and/or width** of line in an optional Closure callback.
 
-## Parameters
+## 参数
 
 ### x1
 X-Coordinate of the starting point.
@@ -36,10 +36,10 @@ Set color of the line in one of the available [color formats](/getting_started/f
 Set the width of the line in pixels. **Option is not available with GD driver** Default: 1
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create empty canvas with background color
@@ -57,7 +57,7 @@ $img->line(10, 10, 195, 195, function ($draw) {
 });
 ```
 
-## See also
+## 参考
 
 - [pixel](/api/pixel)
 - [rectangle](/api/rectangle)

@@ -1,13 +1,13 @@
 # fit — Crop and resize combined
 
-## Description
+## 描述
 
 > public Intervention\Image\Image fit( int $width, [ [int $height], [Closure $callback, [ string $position ]] ])
 
 Combine cropping and resizing to format image in a smart way. The method will find the best fitting aspect ratio of your given **width and height** on the current image automatically, cut it out and resize it to the given dimension. You may pass an optional Closure **callback** as third parameter, to prevent possible upsizing and a custom **position** of the cutout as fourth parameter.
 
 
-## Parameters
+## 参数
 
 ### width
 The width the image will be resized to after cropping out the best fitting aspect ratio.
@@ -40,10 +40,10 @@ The possible values are:
 - bottom-right
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // open file a image resource
@@ -62,7 +62,7 @@ $img->fit(800, 600, function ($constraint) {
 ```
 
 
-## See also
+## 参考
 
 - [resize](/api/resize)
 - [resizeCanvas](/api/resizeCanvas)

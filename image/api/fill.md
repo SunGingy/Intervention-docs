@@ -1,6 +1,6 @@
 # fill — fill image with color or pattern
 
-## Description
+## 描述
 
 > public Intervention\Image\Image fill(mixed $filling, [integer $x, integer $y])
 
@@ -9,7 +9,7 @@ Fill current image with given **color** or another **image** used as tile for fi
 If a certain position is defined, the color at that point on the original image is used to perform a flood fill. If no x,y coordinates are passed, the whole picture is filled no matter what is beneath.
 
 
-## Parameters
+## 参数
 
 ### filling
 The fill color or image pattern. Pass a **color** as one of the different [color formats](/getting_started/formats) or to fill the image with tiles an image resource in the following formats:
@@ -33,10 +33,10 @@ Starting point on y-axis for the filling.
 **If a x, y coordinate is defined the filling will be flood filled based on the color at this position.**
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create empty canvas
@@ -52,6 +52,6 @@ $img->fill('tile.png');
 $img->fill('#ff00ff', 0, 0);
 ```
 
-## See also
+## 参考
 
 - [pixel](/api/pixel)

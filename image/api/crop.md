@@ -1,13 +1,13 @@
 # crop — Crop an image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image crop(int $width, int $height, [int $x, int $y])
 
 Cut out a rectangular part of the current image with given **width and height**. Define optional **x,y coordinates** to move the top-left corner of the cutout to a certain position.
 
 
-## Parameters
+## 参数
 
 ### width
 Width of the rectangular cutout.
@@ -21,10 +21,10 @@ X-Coordinate of the top-left corner if the rectangular cutout. By default the re
 ### y (optional)
 Y-Coordinate of the top-left corner if the rectangular cutout. By default the rectangular part will be centered on the current image.
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // open file a image resource
@@ -35,7 +35,7 @@ $img->crop(100, 100, 25, 25);
 ```
 
 
-## See also
+## 参考
 
 - [resize](/api/resize)
 - [resizeCanvas](/api/resizeCanvas)

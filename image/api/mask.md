@@ -1,13 +1,13 @@
 # mask — Apply an alpha mask to an image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image mask(mixed $source, [bool $mask_with_alpha])
 
 Apply a given **image source** as alpha mask to the current image to change current opacity. Mask will be resized to the current image size. By default a greyscale version of the mask is converted to alpha values, but you can set **mask_with_alpha** to apply the actual alpha channel. Any transparency values of the current image will be maintained. 
 
 
-## Parameters
+## 参数
 
 ### source
 The image source that will be applied as alpha mask. The method can handle the following types of input:
@@ -26,10 +26,10 @@ The image source that will be applied as alpha mask. The method can handle the f
 ### mask_with_alpha (optional)
 Set this to ```true``` to apply the actual alpha channel as mask to the current image instead of the color values. Default: false
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create new Intervention Image
@@ -42,7 +42,7 @@ $img->mask('public/mask.png');
 $img->mask('public/alpha.png', true);
 ```
 
-## See also
+## 参考
 
 - [fill](/api/fill)
 - [opacity](/api/opacity)

@@ -1,6 +1,6 @@
 # orientate — adjusts image orientation automatically
 
-## Description
+## 描述
 
 > public Intervention\Image\Image orientate()
 
@@ -8,20 +8,20 @@ This method reads the EXIF image profile setting 'Orientation' and performs a ro
 
 **Note: PHP must be compiled in with ```--enable-exif``` to use this method. Windows users must also have the ```mbstring``` extension enabled.**
 
-## Parameters
+## 参数
 
 None
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // instantiate image with auto-orientation
 $img = Image::make('foo.jpg')->orientate();
 ```
 
-## See also
+## 参考
 
 - [exif](/api/exif)

@@ -1,20 +1,20 @@
 # pixelate — Pixelate an image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image pixelate(integer $size)
 
 Applies a pixelation effect to the current image with a given **size** of pixels.
 
-## Parameters
+## 参数
 
 ### size
 Size of the pixels.
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create new Intervention Image
@@ -24,7 +24,7 @@ $img = Image::make('public/foo.jpg');
 $img->pixelate(12);
 ```
 
-## See also
+## 参考
 
 - [brightness](/api/brightness)
 - [contrast](/api/contrast)

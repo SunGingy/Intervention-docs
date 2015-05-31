@@ -1,19 +1,19 @@
 # height — Get height of image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image height()
 
 Returns the height in pixels of the current image.
 
-## Parameters
+## 参数
 
 none
 
-## Return Values
+## 返回值
 Height of current image as integer
 
-## Examples
+## 示例
 
 ```php
 // read height of image
@@ -21,6 +21,6 @@ $height = Image::make('public/foo.jpg')->height();
 ```
 
 
-## See also
+## 参考
 
 - [width](/api/width)

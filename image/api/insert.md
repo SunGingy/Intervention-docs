@@ -1,13 +1,13 @@
 # insert — Paste over another image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image insert(mixed $source, [string $position, [integer $x, integer $y]])
 
 Paste a given **image source** over the current image with an optional **position** and a **offset coordinate**. This method can be used to apply another image as watermark because the transparency values are maintained.
 
 
-## Parameters
+## 参数
 
 ### source
 The image source that will inserted on top of the current image. The method can handle the following types of input:
@@ -43,10 +43,10 @@ Optional relative offset of the new image on x-axis of the current image. Offset
 ### y (optional)
 Optional relative offset of the new image on y-axis of the current image. Offset will be calculated relative to the position parameter. Default: 0
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create new Intervention Image

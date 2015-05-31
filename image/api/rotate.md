@@ -1,12 +1,12 @@
 # rotate — Rotate an image
 
-## Description
+## 描述
 
 > public Intervention\Image\Image rotate(float $angle, [string $bgcolor])
 
 Rotate the current image counter-clockwise by a given **angle**. Optionally define a **background color** for the uncovered zone after the rotation.
 
-## Parameters
+## 参数
 
 ### angle
 The rotation angle in degrees to rotate the image counter-clockwise.
@@ -15,10 +15,10 @@ The rotation angle in degrees to rotate the image counter-clockwise.
 A background color for the uncovered zone after the rotation. The background color can be passed in in different [color formats](/getting_started/formats). Default: ```#000000```
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create Image from file
@@ -28,7 +28,7 @@ $img = Image::make('public/foo.jpg');
 $img->rotate(-45);
 ```
 
-## See also
+## 参考
 
 - [flip](/api/flip)
 - [resize](/api/resize)

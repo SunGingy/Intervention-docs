@@ -1,21 +1,21 @@
 # reset — Reset image instance
 
-## Description
+## 描述
 
 > public Intervention\Image\Image reset([string $name])
 
 Resets all of the modifications to a state saved previously by [backup](/api/backup) under an optional **name**.
 
-## Parameters
+## 参数
 
 ### name (optional)
 The name of the backup in memory. Default: *default*
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-## Examples
+## 示例
 
 ```php
 // create an image
@@ -38,6 +38,6 @@ $img->invert();
 $img->save('public/large.jpg');
 ```
 
-## See also
+## 参考
 
 - [backup](/api/backup)

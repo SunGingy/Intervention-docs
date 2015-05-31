@@ -1,13 +1,13 @@
 # circle — Draw a circle
 
-## Description
+## 描述
 
 > public Intervention\Image\Image circle( integer $diameter, integer $x, integer $y, [Closure $callback] )
 
 Draw a circle at given **x, y, coordinates** with given **diameter**. You can define the **appearance** of the circle by an optional closure callback.
 
 
-## Parameters
+## 参数
 
 ### diameter
 Diameter of the circle in pixels.
@@ -34,10 +34,10 @@ Define the background-color of the circle in one of the available [color formats
 Define the border of the circle. Set width as pixels in the first and the border-color in one of the available [color formats](/getting_started/formats) as second parameter.
 
 
-## Return Values
+## 返回值
 Instance of Intervention\Image\Image
 
-##Examples
+## 示例
 
 ```php
 // create empty canvas with background color
@@ -61,7 +61,7 @@ $img->circle(70, 150, 100, function ($draw) {
 ```
 
 
-## See also
+## 参考
 
 - [pixel](/api/pixel)
 - [line](/api/line)
