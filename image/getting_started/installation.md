@@ -1,40 +1,40 @@
-# Installation
+# 安装
 
-## System Requirements
+## 环境要求
 
-Intervention Image requires the following components to work correctly.
+Intervention Image 需要满足以下条件才能正常运行.
 
 - PHP >= 5.3
-- Fileinfo Extension
+- Fileinfo 扩展
 
-And **one of** the following image libraries.
+和下面 **其中一个** 的图形处理库.
 
-- GD Library (>=2.0) &hellip; **or** &hellip;
-- Imagick PHP extension (>=6.5.7)
+- GD 库 (>=2.0) &hellip; **or** &hellip;
+- Imagick PHP 扩展 (>=6.5.7)
 
 ---
 
-## Composer Installation
+## 使用 Composer 安装
 
-The best way to install Intervention Image is quickly and easily with [Composer](http://getcomposer.org/).
+最好最快的安装方式是用使用 [Composer](http://getcomposer.org/).
 
-To install the most recent version, run the following command.
+要安装最新版本, 只需要运行以下命令:
 
 > $ php composer.phar require intervention/image
 
-Now your ```composer.json``` has been updated automatically and you're able to require the just created ```vendor/autoload.php``` file to PSR-4 autoload the library.
+现在你的 ```composer.json``` 文件应该已经自动更新了, 然后你可以通过仅仅引入 ```vendor/autoload.php```  这个文件来运行这个库.
 
-The next step is to decide, if you want to integrate Intervention Image into the **Laravel framework**. If you want to use the library with Laravel, just skip the following step and continue with the description of [Laravel Integration](#laravel).
+后面的步骤是可选的, 如果你想在 **Laravel framework** 下完整的使用 Intervention Image. 如果你想在在 Laravel下使用这个库, 你可以跳过下面的步骤, 直接跳到 [Laravel 集成](#laravel).
 
 
 ---
 
 
-## Usage
+## 使用
 
 Intervention Image doesn't require Laravel or any other framework at all. If you want to use it as is, you just have to require the composer autoload file to instatiate image objects as shown in the following example.
 
-#### Example
+#### 示例
 
 ```php
 // include composer autoload
@@ -52,7 +52,7 @@ $image = $manager->make('public/foo.jpg')->resize(300, 200);
 
 You might also use the static version of ImageManager as shown in the example below.
 
-#### Static Example
+#### 精通调用示例
 
 ```php
 // include composer autoload
@@ -73,7 +73,7 @@ $image = Image::make('public/foo.jpg')->resize(300, 200);
 
 
 <a name="laravel"></a>
-## Integration in Laravel 
+## 集成到 Laravel 
 
 Intervention Image has optional support for [Laravel](http://laravel.com) and comes with a **Service Provider and Facades** for easy integration. The `vendor/autoload.php` is included by Laravel, so you don't have to require or autoload manually. Just see the instructions below.
 
@@ -90,25 +90,25 @@ Add the facade of this package to the ```$aliases``` array.
 Now the Image Class will be auto-loaded by Laravel.
 
 
-### Configuration
+### 配置
 
 By default Intervention Image uses PHP's GD library extension to process all images. If you want to switch to Imagick, you can pull a configuration file into your application by running on of the following artisan command.
 
-#### Publish configuration in Laravel 5
+#### 在 Laravel 5 下 Publish 配置 
 
 > $ php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravel5"
 
 
-#### Publish configuration in Laravel 4
+#### 在 Laravel 4 下 Publish 配置 
 
 > $ php artisan config:publish intervention/image
 
 In Laravel 5 applications the configuration file is copied to ```config/image.php```, in older Laravel 4 applications you will find the file at ```app/config/packages/intervention/image/config.php```. With this copy you can alter the image driver settings for you application locally.
 
-#### Example
+#### 示例
 
 ```php
-// usage inside a laravel route
+// 在 Laravel 路由下使用
 Route::get('/', function()
 {
     $img = Image::make('foo.jpg')->resize(300, 200);

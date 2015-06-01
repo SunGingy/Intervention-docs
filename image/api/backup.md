@@ -1,4 +1,4 @@
-# backup — backups current image state
+# backup — 备份图片当前状态
 
 ## 描述
 

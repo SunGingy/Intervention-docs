@@ -1,4 +1,4 @@
-# Intervention Documentation
+# Intervention 简体中文文档
 
 - [Intervention Image](/image)
 
