@@ -7,7 +7,7 @@
 Backups current image state as fallback for [reset method](/api/reset) under an optional **name**. Overwrites older state on every call, unless a different name is passed.
 
 
-## 参数
+## 参数 设置
 
 ### name (optional)
 The name of the backup in memory. Default: *default*
